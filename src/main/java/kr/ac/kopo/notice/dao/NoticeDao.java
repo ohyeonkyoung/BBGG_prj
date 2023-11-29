@@ -12,7 +12,7 @@ public interface NoticeDao {
 	NoticeVO noticeListOne(Long noticeNo);
 	
 	// 조회수
-	public void noticeCount(int noticeViewCount) throws Exception;
+	void noticeCount(Long noticeNo);
 	
 	int total(Pager pager);
 }

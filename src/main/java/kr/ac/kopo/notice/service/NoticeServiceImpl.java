@@ -32,6 +32,7 @@ public class NoticeServiceImpl implements NoticeService {
 
 	@Override
 	public NoticeVO noticeListOne(Long noticeNo) {
+		noticeDao.noticeCount(noticeNo);
 		return noticeDao.noticeListOne(noticeNo);
 	}
 }

@@ -38,8 +38,8 @@ public class NoticeDaoImpl implements NoticeDao {
 	}
 	
 	@Override
-	public void noticeCount(int noticeViewCount) throws Exception {
-		sql.update("notice.viewCount");
+	public void noticeCount(Long noticeNo){
+		sql.update("notice.viewCount", noticeNo);
 	}
 
 	@Override
