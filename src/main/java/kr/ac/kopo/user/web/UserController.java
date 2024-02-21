@@ -18,6 +18,7 @@ import kr.ac.kopo.user.service.UserService;
 public class UserController {
 
 	private final String path = "user/";
+	
 	@Autowired
 	UserService service;
 	

@@ -19,6 +19,7 @@ import kr.ac.kopo.admin.service.AdminService;
 import kr.ac.kopo.fake.web.FakeVO;
 import kr.ac.kopo.item.web.ItemVO;
 import kr.ac.kopo.pager.Pager;
+import kr.ac.kopo.partner.service.PartnerService;
 import kr.ac.kopo.partner.web.PartnerVO;
 import kr.ac.kopo.user.web.UserVO;
 
@@ -59,6 +60,13 @@ public class AdminController {
 		List<UserVO> list = adminService.userListAll(pager);
 		model.addAttribute("list", list);
 		return "/admin/userList";
+	}
+	
+	@GetMapping("/admin/partnerList")
+	public String partnerList(Model model, Pager pager) {
+		List<PartnerVO> list = adminService.partnerListAll(pager);
+		model.addAttribute("list", list);
+		return "/admin/partnerList";
 	}
 	
 	@GetMapping("/admin/itemList")

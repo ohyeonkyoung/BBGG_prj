@@ -120,6 +120,22 @@
 		LIMIT 10
 	</select>
 	
+	<select id="selectPartnerListAll" resultType="PartnerVO">
+		SELECT sub.*
+		FROM (
+			SELECT 
+				partner_no
+				, user_id
+				, comp_name
+				, partner_name
+				, regist_date
+				, phone
+				, ROW_NUMBER() OVER (ORDER BY regist_date DESC) AS rownum
+			FROM  tbl_partner
+		) AS sub
+		LIMIT ${perPage} OFFSET ${offset}
+	</select>
+	
 	<select id="selectItemList" resultType="ItemVO">
 		SELECT i.*
 		FROM tbl_item i

@@ -34,6 +34,13 @@ public class AdminServiceImpl implements AdminService {
 	public List<PartnerVO> partnerList(PartnerVO partnerVO) {
 		return adminDao.partnerList(partnerVO);
 	}
+	
+	@Override
+	public List<PartnerVO> partnerListAll(Pager pager) {
+		int total = adminDao.total(pager);
+		pager.setTotal(total);
+		return adminDao.partnerListAll(pager);
+	}
 
 	@Override
 	public List<ItemVO> itemList(ItemVO itemVO) {
@@ -93,7 +100,4 @@ public class AdminServiceImpl implements AdminService {
 		return adminDao.countFakeYestd();
 	}
 
-	
-
-	
 }

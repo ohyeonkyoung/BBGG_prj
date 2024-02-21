@@ -41,7 +41,7 @@
               	</li>
               	<li>
               		<a title="오연경(포트폴리오)" target="_blank" href="#개인 포트폴리오 링크"><i class="lni-user"></i>&nbsp;오연경</a>
-              		<a target="_blank" style="margin: 3px;" href="https://github.com/techykoh"><img alt="Git Hub" src="/resources/comm/SNS/github.png" style=" width: 15px; height: 15px"></a>
+              		<a target="_blank" style="margin: 3px;" href="https://github.com/ohyeonkyoung"><img alt="Git Hub" src="/resources/comm/SNS/github.png" style=" width: 15px; height: 15px"></a>
                 	<a target="_blank" style="margin: 3px;" href="https://www.instagram.com/"><img alt="Instargram" src="/resources/comm/SNS/instar.png" style=" width: 15px; height: 15px"></a>
               	</li>
               	<li>

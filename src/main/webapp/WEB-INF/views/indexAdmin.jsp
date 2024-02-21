@@ -183,7 +183,7 @@
 							
 							<div class="card">
 								<div class="card-header card-header-action">
-									<h6>신규 단체 회원</h6>
+									<h6>신규 중개사 회원</h6>
 									<div class="d-flex align-items-center card-action-wrap">
 										<a href="/admin/partnerList" class="inline-block refresh mr-15">
 											<i class="ion ion-md-arrow-down"></i>

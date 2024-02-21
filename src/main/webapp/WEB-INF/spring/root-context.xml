@@ -13,9 +13,9 @@
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
 
-		<property name="jdbcUrl" value="jdbc:mariadb://13.125.61.96:3306/bangbanggoggog"></property>
-		<property name="username" value="bangbanggoggog"></property>
-		<property name="password" value="test+!@#$"></property>
+		<property name="jdbcUrl" value="jdbc:mariadb://127.0.0.1:3306/bbggproject_db"></property>
+		<property name="username" value="bbggproject_user"></property>
+		<property name="password" value="bbggproject_pass"></property>
 	</bean>
 
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">

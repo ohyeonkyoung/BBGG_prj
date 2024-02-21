@@ -34,6 +34,11 @@ public class AdminDaoImpl implements AdminDao {
 	}
 	
 	@Override
+	public List<PartnerVO> partnerListAll(Pager pager) {
+		return sql.selectList("admin.selectPartnerListAll", pager);
+	}
+	
+	@Override
 	public List<ItemVO> itemList(ItemVO itemVO) {
 		return sql.selectList("admin.selectItemList", itemVO);
 	}

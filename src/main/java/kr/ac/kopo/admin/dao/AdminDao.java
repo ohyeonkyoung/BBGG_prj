@@ -13,6 +13,7 @@ public interface AdminDao {
 	List<UserVO> userList(UserVO userVO);
 	List<UserVO> userListAll(Pager pager);
 	List<PartnerVO> partnerList(PartnerVO partnerVO);
+	List<PartnerVO> partnerListAll(Pager pager);
 	List<ItemVO> itemList(ItemVO itemVO);
 	List<FakeVO> fakeList(FakeVO fakeVO);
 	

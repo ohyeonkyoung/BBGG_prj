@@ -116,7 +116,6 @@ public class PartnerController {
 	}
 	
 	
-	
 	@GetMapping("/list")
 	public String list(Model model, Pager pager) {
 		List<PartnerVO> list = service.list(pager);

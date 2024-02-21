@@ -66,14 +66,12 @@
 		SELECT i.*, f.*
 		FROM tbl_item i
 		LEFT JOIN (
-		SELECT item_no, MIN(file_no) AS min_file_no
-		FROM tbl_item_file
-		GROUP BY item_no
-		) AS min_files ON i.item_no = min_files.item_no
-		LEFT JOIN tbl_item_file
-		f ON i.item_no = f.item_no AND f.file_no = min_files.min_file_no
-		ORDER
-		BY i.regist_date DESC
+					SELECT item_no, MIN(file_no) AS min_file_no
+					FROM tbl_item_file
+					GROUP BY item_no
+					) AS min_files ON i.item_no = min_files.item_no
+		LEFT JOIN tbl_item_file f ON i.item_no = f.item_no AND f.file_no = min_files.min_file_no
+		ORDER BY i.regist_date DESC
 	</select>
 
 	<!-- <select id="itemSelect" resultType="itemVO"> SELECT <choose> <when 
